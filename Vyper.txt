@@ -1,0 +1,19 @@
+Vyper là smart contract programming language như có cấu trúc giống Python. Nó có cấu trúc đơn giản và secure. Nó khác Solidity vài điểm:
+K overflow, k unbounded array, k infinite loops, k assembly, k modifier, k inheritace. VD: Uniswap V1, curve.fi dùng Vyper
+
+docs: https://vyper.readthedocs.io/en/stable/
+Vyper có compiler online: https://etherscan.io/vyper
+
+Để install: Tải và cài python -> Trước khi cài phải ấn vào ADD PATH thì nó mới thêm url vào environment variable thì ta mới dùng được gói pip của python trên terminal -> python --version (nhiều version phải dùng python3)
+-> python -m pip install --user virtualenv => thay vì cài trực tiếp Vyper thì ta cài virtualenv và từ đó mới cài Vyper sẽ giúp ta cài Vyper các phiên bản khác nhau cho từng dự án còn cài luôn Vyper sẽ bị cố định phiên bản
+-> python -m virtualenv venv => tạo folder mới venv thư mục hiện tại mà python package được cài
+-> ./env/Scripts/activate.bat
+-> pip install vyper => folder đã được install vyper -> vyper --version
+-> trên thư mục đó tạo file.vy -> code vyper contract -> vyper <link tới file.vy> => nó sẽ compile file nó trả ra abi
+
+Dùng remix với Vyper:
+Vào plugin -> activate vyper -> xuất hiện compiler của vyper -> tạo file.vy -> chọn icon vyper -> remote compiler -> compile -> nên dùng terminal vì nó báo error còn remix thì éo
+
+Trong remix có phần low-level interactions sau khi deploy contract là để tương tác với contract bằng cách calldata string, Vd để trống kèm 1 lượng ether thì ấn transact phát là gọi vào hàm k tồn tại là fallback gửi ether vào đó
+
+Tên của file Vyper là tên contract, mỗi file là 1 contract
