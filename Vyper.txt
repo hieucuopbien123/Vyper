@@ -15,6 +15,7 @@ Vyper có compiler online: https://etherscan.io/vyper
 -> ./venv/Scripts/activate.bat
 -> pip install vyper => folder đã được install vyper -> vyper --version
 -> trên thư mục đó tạo file.vy -> code vyper contract -> vyper <link tới file.vy> => nó sẽ compile file nó trả ra abi
+=> Trong máy tính có thể có sẵn python nhưng cài python như v có thể bị lỗi vì khi cài chuẩn phải đầy đủ các thứ đi kèm như pip => xóa đi cài lại(xóa cả cái folder Python trong ổ C) là được
 
 Dùng remix với Vyper:
 Vào plugin -> activate vyper -> xuất hiện compiler của vyper -> tạo file.vy -> chọn icon vyper -> remote compiler -> compile -> nên dùng terminal vì nó báo error còn remix thì éo
@@ -34,4 +35,4 @@ python server.py => để chạy server là 1 local compiler, cung compiler vype
 => vào remix dùng local compiler ở port 8080 là đư
 => thế là có server, mỗi lần muốn chạy server chỉ cần khởi động vơi: python server.py -> là được
 
-
+constant array k lấy được từng phần tử gán vào biến khác để dùng nhé
